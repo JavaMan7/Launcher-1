@@ -160,8 +160,8 @@ public class LoginDialog extends JDialog {
         rememberPassCheck.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (rememberPassCheck.isSelected()) {
-                    rememberIdCheck.setSelected(true);
+                if (!rememberPassCheck.isSelected()) {
+                    rememberIdCheck.setSelected(false);
                 }
             }
         });
